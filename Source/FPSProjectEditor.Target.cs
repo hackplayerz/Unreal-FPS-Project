@@ -1,0 +1,15 @@
+// Copyright 2022, Infima Games. All Rights Reserved.
+
+using UnrealBuildTool;
+using System.Collections.Generic;
+
+public class FPSProjectEditorTarget : TargetRules
+{
+	public FPSProjectEditorTarget(TargetInfo Target) : base(Target)
+	{
+		Type = TargetType.Editor;
+		DefaultBuildSettings = BuildSettingsVersion.V2;
+
+		ExtraModuleNames.AddRange( new string[] { "FPSProject" } );
+	}
+}
